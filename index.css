@@ -1,0 +1,52 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #000000
+}
+ul
+{
+	position: relative;
+	display: flex;
+}
+ul li
+{
+	list-style: none;
+	margin: 0 20px;
+}
+ul li a
+{
+	position: relative;
+	display: inline-block;
+	font-size: 2em;
+	color: #4de78a;
+	transition: .2s;
+}
+ul li:hover a
+{
+	color: #fff;
+}
+.cursor
+{
+	position: fixed;
+	width: 0;
+	height: 0;
+	border:5px solid: #fff;
+	border-radius: 50%;
+	transform: translate(-50%,-50%);
+	pointer-events: none;
+	transition: width:0.2s, height:0.2s;	
+}
+ul li:hover ~ .cursor
+{
+	width: 50px;
+	height: 50px;
+	border: 2px solid: #fff;
+}
